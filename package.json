@@ -4,11 +4,13 @@
   "description": "测试用例：supertest",
   "main": "app.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "alsotang <alsotang@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "mocha": "^1.21.4",
     "should": "^4.0.4",
     "supertest": "^0.14.0"
